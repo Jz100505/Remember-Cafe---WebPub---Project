@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Remember Café</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="images/remember-logo-dark.png" alt="Remember Café Logo"></a>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="home">Contact</a>
+      </nav>
+      <div class="cart">
+        <a href="cart.html"><img src="images/cart-icon.png" alt="Cart"></a>
+      </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <h1>We’d Love to Hear From You</h1>
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact">Contact Number</label>
+            <input type="text" id="contact" name="contact" placeholder="09XX-XXX-XXXX" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="send-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-wrapper">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img src="images/remember-logo-dark.png" alt="Remember Café Logo" class="footer-logo">
+          <h2 class="footer-title">Remember Café</h2>
+          <p class="footer-tagline">Remember the feeling. Savor the moment.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-heading">Community</h3>
+          <ul class="footer-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">X</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-heading">Contact Us</h3>
+          <p class="footer-contact">sample@gmail.com</p>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2025 Remember Café. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Thank You Message Overlay -->
+  <div class="thank-you-wrapper" id="thankYou">
+    <div class="thank-you-message">
+      <h2>Thank you for reaching out!</h2>
+      <p>We’ll get back to you as soon as possible.</p>
+      <button class="back-btn" id="backToProducts">Back to Products</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      // Show thank you message with smooth transition
+      document.getElementById("thankYou").classList.add("show");
+
+      // Reset form
+      this.reset();
+    });
+
+    // Back button to products page
+    document.getElementById("backToProducts").addEventListener("click", function() {
+      window.location.href = "products.html";
+    });
+  </script>
+</body>
+</html>
