@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Remember Café</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="product.js"></script>
+  <script defer src="products.js"></script>
+</head>
+<body>
+  <div class="site-wrapper">
+
+    <!-- ==================== HEADER ==================== -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/remember-logo-dark.png" alt="Remember Café Logo" />
+        </a>
+      </div>
+
+      <nav>
+        <a href="index.html" class="home">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="cart">
+        <a href="cart.html" aria-label="Shopping cart">
+          <img src="images/cart-icon.png" alt="Cart Icon" />
+        </a>
+      </div>
+    </header>
+
+    <!-- ==================== PRODUCTS SECTION ==================== -->
+    <section class="products-section">
+      <div class="products-header">
+        <h3>Our Products</h3>
+        <h1>Pause, Enjoy and Remember</h1>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search our products...">
+      </div>
+
+      <!-- Product Grid (Dynamically Filled with JS) -->
+      <section class="product-grid" id="productList"></section>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-container">
+
+          <!-- Brand and Logo -->
+          <div class="footer-brand">
+            <img src="images/remember-logo-dark.png" alt="Remember Café Logo" class="footer-logo" />
+            <h2 class="footer-title">Remember Café</h2>
+            <p class="footer-tagline">Remember the feeling. Savor the moment.</p>
+          </div>
+
+          <!-- Community Links -->
+          <div class="footer-section">
+            <h3 class="footer-heading">Community</h3>
+            <ul class="footer-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">TikTok</a></li>
+              <li><a href="#">X</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="footer-section">
+            <h3 class="footer-heading">Contact Us</h3>
+            <p class="footer-contact">sample@gmail.com</p>
+            <p class="footer-contact">+63 000 000 0000</p>
+          </div>
+        </div>
+
+        <!-- Bottom copyright -->
+        <div class="footer-bottom">
+          <p>© 2024 Manaloto, Johnzelle & Chean, Valencia. WD - 301. Designed with Figma.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

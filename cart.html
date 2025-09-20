@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - Remember Café</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="cart.js"></script>
+</head>
+<body>
+  <div class="site-wrapper">
+    
+    <!-- ==================== HEADER ==================== -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/remember-logo-dark.png" alt="Logo" />
+        </a>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="cart">
+        <a href="cart.html" aria-label="Shopping cart">
+          <img src="images/cart-icon.png" alt="Cart Icon" />
+        </a>
+      </div>
+    </header>
+
+    <!-- ==================== CART SECTION ==================== -->
+    <section class="cart-section">
+      <h1>Your Cart</h1>
+      <div class="cart-container">
+
+        <!-- Cart Items -->
+        <div class="cart-items" id="cartItems"></div>
+
+      <!-- Order Summary -->
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <p>Subtotal: ₱<span id="subtotal">0</span></p>
+        <p>Delivery Fee: ₱50</p>
+        <hr>
+        <p class="total">Total: ₱<span id="total">0</span></p>
+
+        <!-- Address Input -->
+        <label for="addressInput" class="address-label">Delivery Address:</label>
+        <textarea id="addressInput" placeholder="Enter your complete address here..."></textarea>
+
+        <button class="checkout-btn">Check Out</button>
+      </div>
+
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2>Remember Café</h2>
+          <p>Remember the feeling. Savor the moment.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Community</h4>
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>TikTok</p>
+          <p>X</p>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>sample@gmail.com</p>
+          <p>+63 000 000 0000</p>
+        </div>
+      </div>
+      <p class="footer-credit">© 2024 Manaloto, Johnzelle. WD - 301. Designed with Figma.</p>
+    </footer>
+  </div>
+</body>
+</html>
