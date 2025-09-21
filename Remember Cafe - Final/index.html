@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website with Header and Hero</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet" />
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="site-wrapper">
+
+    <!-- ==================== HEADER ==================== -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/remember-logo-dark.png" alt="Logo" />
+        </a>
+      </div>
+
+      <nav>
+        <a href="index.html" class="home">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="cart">
+        <a href="cart.html" aria-label="Shopping cart">
+          <img src="images/cart-icon.png" alt="Cart Icon" />
+        </a>
+      </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-container" role="img" aria-label="Hero image with text REMEMBER">
+      <h1 class="hero-text">REMEMBER</h1>
+      <img src="images/remember_hero.png" alt="Hero image" class="hero-image" />
+    </section>
+
+    <!-- ==================== ABOUT US SECTION ==================== -->
+    <section class="about-container">
+      <div class="about-bg"></div>
+
+      <h2 class="about-title">About us</h2>
+      <h3 class="about-heading">Remember the Moment.</h3>
+
+      <p class="about-text">
+        Remember Café is a cozy coffee spot along Friendship Hi-way in Angeles City, Pampanga.
+        Designed for relaxing, studying, or catching up with friends, we serve freshly brewed coffee,
+        frappes, fruit teas, and light bites like pastries and pasta. With our warm ambiance and
+        friendly service, we hope to be your go-to place to sip, unwind, and make memories.
+      </p>
+
+      <img src="images/remember-cafe-day.jpg" alt="Cafe preview" class="about-img-small" />
+      <img src="images/remember-cafe-night.jpg" alt="Cafe main image" class="about-img-large" />
+    </section>
+
+    <!-- ==================== HIGHLIGHT SECTION ==================== -->
+    <section class="highlight-container">
+      <div class="highlight-bg"></div>
+
+      <div class="highlight-header">
+        <div class="highlight-text">
+          <div class="highlight-subtitle">Feature <span>Section</span></div>
+          <p class="highlight-intro">
+            Explore a curated selection of our signature dishes and café moments —
+            a visual taste of what awaits at Remember Café.
+          </p>
+        </div>
+        <h2 class="highlight-heading">Highlight Dishes</h2>
+      </div>
+
+      <!-- First row of highlight dishes -->
+      <div class="highlight-row">
+        <div class="highlight-item">
+          <img src="images/food-4.webp" alt="Honey Sriracha Wings" class="highlight-img left-rounded" />
+          <p class="highlight-desc">
+            Crispy fried wings coated in a sweet and spicy honey sriracha sauce, served with a creamy dipping sauce.
+          </p>
+        </div>
+
+        <div class="highlight-item">
+          <img src="images/food-0.webp" alt="Spaghetti with Meatballs" class="highlight-img" />
+          <p class="highlight-desc">
+            A classic comfort dish featuring spaghetti noodles tossed in a rich tomato sauce
+            with hearty meatballs and a side of garlic bread.
+          </p>
+        </div>
+
+        <div class="highlight-item">
+          <img src="images/food-3.webp" alt="Garlic Cream Cheese Buns" class="highlight-img right-rounded" />
+          <p class="highlight-desc">
+            A savory treat of soft, pillowy buns filled with a tangy cream cheese center and drenched in a garlic butter glaze.
+          </p>
+        </div>
+      </div>
+
+      <!-- Second row of highlight dishes -->
+      <div class="highlight-row">
+        <div class="highlight-item">
+          <img src="images/food-1.webp" alt="Salads Trio" class="highlight-img left-rounded" />
+          <p class="highlight-desc">
+            A vibrant selection of three distinct salads, offering a fresh and healthy variety of greens and toppings.
+          </p>
+        </div>
+
+        <div class="highlight-item">
+          <img src="images/food-2.webp" alt="Pork Chop Steak" class="highlight-img" />
+          <p class="highlight-desc">
+            A grilled pork chop steak drizzled with a creamy sauce, served with a fresh side salad and sweet pineapple rings.
+          </p>
+        </div>
+
+        <div class="highlight-item">
+          <img src="images/food-5.webp" alt="Chocolate Frappe" class="highlight-img right-rounded" />
+          <p class="highlight-desc">
+            A rich and decadent chocolate frappe, topped with whipped cream and chocolate shavings for a perfect sweet treat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURE SECTION ==================== -->
+    <section class="feature-container">
+      <div class="feature-bg"></div>
+
+      <h2 class="feature-heading">Café Highlights</h2>
+
+      <!-- Side-by-side videos -->
+      <video class="feature-img feature-img-left" autoplay muted loop playsinline>
+        <source src="images/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <video class="feature-img feature-img-right" autoplay muted loop playsinline>
+        <source src="images/video-1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Image below videos -->
+      <img src="images/picture.webp" alt="Cafe wide showcase" class="feature-img feature-img-bottom" />
+
+      <!-- Feature text -->
+      <p class="feature-text">
+        Step into Remember Cafe and discover a hidden gem in Angeles City.
+        Our video showcases more than just delicious food and drinks—it's a journey through our cozy and beautifully designed space.
+        With chic, K-drama inspired interiors, comfortable seating, and a welcoming atmosphere,
+        we've created the perfect place to unwind, catch up with friends, or simply enjoy a moment of peace.
+      </p>
+
+      <p class="feature-quote">
+        "Where every sip tells a story, and every visit is a memory worth keeping."
+      </p>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-container">
+
+          <!-- Brand and Logo -->
+          <div class="footer-brand">
+            <img src="images/remember-logo-dark.png" alt="Remember Café Logo" class="footer-logo" />
+            <h2 class="footer-title">Remember Café</h2>
+            <p class="footer-tagline">Remember the feeling. Savor the moment.</p>
+          </div>
+
+          <!-- Community Links -->
+          <div class="footer-section">
+            <h3 class="footer-heading">Community</h3>
+            <ul class="footer-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">TikTok</a></li>
+              <li><a href="#">X</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="footer-section">
+            <h3 class="footer-heading">Contact Us</h3>
+            <p class="footer-contact">sample@gmail.com</p>
+            <p class="footer-contact">+63 000 000 0000</p>
+          </div>
+        </div>
+
+        <!-- Bottom copyright -->
+        <div class="footer-bottom">
+          <p>© 2024 Manaloto, Johnzelle & Chean, Valencia. WD - 301. Designed with Figma.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>

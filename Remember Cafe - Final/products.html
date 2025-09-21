@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Remember Café</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="product.js"></script>
+  <script defer src="products.js"></script>
+</head>
+<body>
+  <div class="site-wrapper">
+
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/remember-logo-dark.png" alt="Remember Café Logo" />
+        </a>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html" class="home">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="cart">
+        <a href="cart.html" aria-label="Shopping cart">
+          <img src="images/cart-icon.png" alt="Cart Icon" />
+        </a>
+      </div>
+    </header>
+
+    <section class="products-section">
+      <div class="products-header">
+        <h3>Our Products</h3>
+        <h1>Pause, Enjoy and Remember</h1>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search our products...">
+      </div>
+
+      <div class="rating-controls-container">
+          <div class="rating-toggle-container">
+              <button id="publicRatingBtn" class="rating-toggle-btn active">Public Rating</button>
+              <button id="yourRatingBtn" class="rating-toggle-btn">Your Rating</button>
+          </div>
+
+          <div class="rating-filter-dropdown">
+              <button class="rating-filter-toggle">☰ Filter by Rating</button>
+              <div class="rating-filter-menu" id="filter-menu">
+                  <a href="#" data-rating-filter="all" class="active">All</a>
+                  <a href="#" data-rating-filter="1">1 ★</a>
+                  <a href="#" data-rating-filter="2">2 ★</a>
+                  <a href="#" data-rating-filter="3">3 ★</a>
+                  <a href="#" data-rating-filter="4">4 ★</a>
+                  <a href="#" data-rating-filter="5">5 ★</a>
+              </div>
+          </div>
+      </div>
+
+      <section class="product-grid" id="productList"></section>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-container">
+
+          <div class="footer-brand">
+            <img src="images/remember-logo-dark.png" alt="Remember Café Logo" class="footer-logo" />
+            <h2 class="footer-title">Remember Café</h2>
+            <p class="footer-tagline">Remember the feeling. Savor the moment.</p>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="footer-heading">Community</h3>
+            <ul class="footer-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">TikTok</a></li>
+              <li><a href="#">X</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="footer-heading">Contact Us</h3>
+            <p class="footer-contact">sample@gmail.com</p>
+            <p class="footer-contact">+63 000 000 0000</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2024 Manaloto, Johnzelle & Chean, Valencia. WD - 301. Designed with Figma.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
