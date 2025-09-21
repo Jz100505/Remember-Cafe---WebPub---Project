@@ -67,7 +67,7 @@ const products = [
     id: 10,
     name: "Mango",
     price: 250,
-    img: "images/Mango.png",
+    img: "images/mango.png",
     rating: 4, // Public rating
   },
   {
@@ -265,4 +265,5 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
+
 });
